@@ -1,6 +1,11 @@
 Paths
 ---
 
+### Node
+```sh
+npm i root-paths --save
+```
+
 ### Project
 ```
 project
