@@ -1,6 +1,6 @@
 {
   "name": "root-paths",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "app paths, root paths",
   "main": "app.js",
   "scripts": {
@@ -23,6 +23,6 @@
   "dependencies": {
     "aimee-extend": "^1.0.1",
     "glob": "^7.1.1",
-    "vpm-config": "^2.1.2"
+    "vpm-config": "^2.1.3"
   }
 }
