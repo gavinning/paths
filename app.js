@@ -21,7 +21,7 @@ function dir(cwd){
     let sun, map = {}
     glob
         // 查询当前目录下js文件
-        .sync('**/**.js', {nodir: true, cwd: cwd})
+        .sync('**/**.{js,json,conf,config}', {nodir: true, cwd: cwd})
         // map相对路径与绝对路径
         .map(item => {
             return {
@@ -44,7 +44,7 @@ function dir(cwd){
 function createPaths(map) {
     let config = new Config
     config.init()
-    config.set(map.src.replace(/\.js$/, '').split('/').join('.'), map.url)
+    config.set(map.src.replace(/\.(js|json|conf|config)$/, '').split('/').join('.'), map.url)
     let paths = config.get()
     config = null
     return paths
