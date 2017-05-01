@@ -83,4 +83,4 @@ class Paths {
     }
 }
 
-module.exports = global.paths = Paths
+module.exports = Paths
